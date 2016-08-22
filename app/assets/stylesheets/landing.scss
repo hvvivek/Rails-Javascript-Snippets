@@ -1,0 +1,79 @@
+// Place all the styles related to the landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#carousel{
+    position: relative;
+    min-height: 476px;
+    max-width: 717px;
+    overflow: hidden;
+}
+.carousel-image{
+    position: absolute;
+    display: block;
+    margin-left: -100%;
+}
+
+.active{
+    margin-left: 0%;
+}
+
+.prev{
+    margin-left: 100%;
+}
+
+#carousel-next{
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    right: 0px;
+    top: calc(50% - 15px);
+    opacity: 0.3;
+    background-color: black;
+    border:none;
+}
+
+#carousel-next img{
+    width: 100%;
+    height: auto;
+}
+
+#carousel-previous{
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    left: 0px;
+    top: calc(50% - 15px);
+    opacity: 0.3;
+    background-color: black;
+    border: none;
+}
+
+#carousel-previous img{
+    width: 100%;
+    height: auto;
+}
+#carousel-next:hover{
+    opacity: 1;
+}
+
+#carousel-next:focus{
+    outline:none;
+    opacity: 1;
+}
+
+#carousel-previous:focus{
+    outline:none;
+    opacity: 1;
+}
+#carousel-previous:hover{
+    opacity: 1;
+}
+
+#triangle-bottomleft {
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 717px solid rgba(1,1,1,0.8);
+	border-right: 1084px solid transparent;
+}
